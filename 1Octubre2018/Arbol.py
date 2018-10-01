@@ -27,7 +27,15 @@ class Nodo(object):
 		return self.padre==None
 	def getHijos(self):
 		return self.hijos
-		
+	def peso(self):
+		#Suma de Nodos inferiores
+		if self.esHoja(): 
+			return 1
+		else:
+			suma=1
+			for hijo in self.getHijos():
+			    suma=suma+ hijo.peso()
+			return suma
 	def __str__(self):
 		return str(self.id) 
 	def __repr__(self):
@@ -73,7 +81,7 @@ class ArbolBinario(object):
 		self.recorrerNodo(self.__raiz__)
 
 	def recorrerNodo(self,nodo,profundidad=1):
-		print "     "*profundidad+str(nodo)
+		print "     "*profundidad+str(nodo)+ " peso = "+str(nodo.peso())
 		hijos=nodo.getHijos()
 		for hijo in hijos:
 			self.recorrerNodo(hijo,profundidad+1)
