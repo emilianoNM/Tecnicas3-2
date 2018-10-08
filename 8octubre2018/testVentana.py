@@ -26,7 +26,7 @@ class Application(Frame):
         # here is the application variable
         self.contents = StringVar()
         # set it to some value
-        self.contents.set("this is a variable")
+        self.contents.set("frase inicial")
         # tell the entry widget to watch this variable
         self.entrythingy["textvariable"] = self.contents
 
