@@ -14,10 +14,10 @@ MiPrimerArbol.addNodo(Arbol.Nodo('J',None))
 MiPrimerArbol.addNodo(Arbol.Nodo('K',None))
 MiPrimerArbol.addNodo(Arbol.Nodo('L',None))
 MiPrimerArbol.addNodo(Arbol.Nodo('M',None))
-print A
+print (A)
 for  hijo in  A.getHijos():
-	print "   ",hijo
+	print ("   ",hijo)
 	for hio2hijo in hijo.getHijos():
-		print "        ",hio2hijo
+		print ("        ",hio2hijo)
 		for hio2hijo2hijo in hio2hijo.getHijos():
-			print "           ",hio2hijo2hijo
+			print ("           ",hio2hijo2hijo)
