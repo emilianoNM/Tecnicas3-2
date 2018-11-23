@@ -1,0 +1,5 @@
+cadena=raw_input("escribe palabra:")
+cadena=cadena.replace('a','$')
+cadena=cadena.replace('A','$')
+print("modificar palabra")
+print(cadena)
