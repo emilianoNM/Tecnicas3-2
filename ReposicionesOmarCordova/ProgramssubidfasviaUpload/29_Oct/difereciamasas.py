@@ -1,0 +1,6 @@
+a1=float(input("Escribe la primer masa"))
+a1=float(input("Escribe segunda masa"))
+r=float(input("Escribe distancia entre centros de masas"))
+G=6.673*(10**-11)
+f=(G*a1*a2)/(r**2)
+print("fuerza gravedad:",roung(f,2),"N")
